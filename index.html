@@ -11,15 +11,14 @@
 
     <!-- CSS -->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="css/simple-line-icons.css" rel="stylesheet" media="screen">
 
     <!-- Custom styles CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" media="screen">
-    <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/myApp.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet">
 
-    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
 </head>
 
@@ -27,7 +26,7 @@
     <div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; background: #fff; padding: 10px; border-radius: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
         <p style="margin: 0 0 5px 0; font-size: 10px; text-align: center; color: #E7746F;">Nossa Música 🎵</p>
         <audio controls loop style="height: 30px; width: 200px;">
-            <source src="assets/music/Jão - Essa Eu Fiz .mp3" type="audio/mpeg">
+            <source src="assets/audio/Jão - Essa Eu Fiz .mp3" type="audio/mpeg">
             Seu navegador não suporta áudio.
         </audio>
     </div>
@@ -37,7 +36,7 @@
         <div class="home-overlay"></div>
         <div class="intro">
             <div class="scroll-down2">
-                <img style="width: 100px; height: 100px; border-radius: 100%;" src="assets/images/jackelinda.jpeg" alt="img01" />
+                <img style="width: 100px; height: 100px; border-radius: 100%;" src="assets/img/jackelinda.jpeg" alt="img01" />
             </div>
 
             <div class="start">Olá Jackelinda ❤️</div>
@@ -45,7 +44,7 @@
             <div class="start"></div>
 
             <div id="animation">
-                <img src="assets/images/coração.gif" alt="perfil">
+                <img src="assets/img/coração.gif" alt="perfil">
             </div>
         </div>
 
@@ -103,8 +102,8 @@
                 <div class="col-sm-6 col-sm-offset-3">
 
                     <div class="pfblock-headerwow fadeInUp">
-                        <div class="pfblock-subtitle" ng-app="cQuit">
-                            <div class="main-container" role="main" ng-controller="mainController" style="text-align: center; min-height: 250px;">
+                        <div class="pfblock-subtitle">
+                            <div class="main-container" role="main" style="text-align: center; min-height: 250px;">
                             
                                 <div class="heart-wrapper">
                                     <div class="heart-shape"></div>
@@ -112,8 +111,8 @@
 
                                 <div class="time-container wow fadeInUp" data-wow-delay="0.2s" style="margin-top: 30px;">
                                     <h3 style="color: #E7746F; font-weight: bold; margin-bottom: 10px;">Juntos há:</h3>
-                                    <span class="time" style="font-size: 24px; font-weight: 300; color: #555;">
-                                    {{days}}
+                                    <span id="days-counter" class="time" style="font-size: 24px; font-weight: 300; color: #555;">
+                                    Carregando...
                                     </span>
                                 </div>
 
@@ -143,7 +142,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/modelo.jpg" alt="img01" />
+                                    <img src="assets/img/modelo.jpg" alt="img01" />
                                     <figcaption>
                                         <h2>Ela é <span>Modelo</span></h2>
                                         <p></p>
@@ -157,7 +156,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/maravilhosa.jpg.jpeg" alt="img01" />
+                                    <img src="assets/img/maravilhosa.jpg.jpeg" alt="img01" />
                                     <figcaption>
                                         <h2>Mara <span>vilhosa</span></h2>
                                         <p></p>
@@ -171,7 +170,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/encantadora.jpeg" alt="img01" />
+                                    <img src="assets/img/encantadora.jpeg" alt="img01" />
                                     <figcaption>
                                         <h2>Ela <span>Encanta</span></h2>
                                         <p></p>
@@ -185,7 +184,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/gostosa.jpeg" alt="img01" />
+                                    <img src="assets/img/gostosa.jpeg" alt="img01" />
                                     <figcaption>
                                         <h2>Muito <span>Gostosa</span></h2>
                                         <p></p>
@@ -199,7 +198,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/heroina.jpeg" alt="img01" />
+                                    <img src="assets/img/heroina.jpeg" alt="img01" />
                                     <figcaption>
                                         <h2>Minha <span>Heroina</span></h2>
                                         <p></p>
@@ -213,7 +212,7 @@
 
                             <div class="grid wow zoomIn">
                                 <figure class="effect-bubba">
-                                    <img src="assets/images/amor.jpg.jpeg" alt="img01" />
+                                    <img src="assets/img/amor.jpg.jpeg" alt="img01" />
                                     <figcaption>
                                         <h2>Acima de tudo <span>Meu AMOR</span></h2>
                                         <p>Você me faz feliz todos os dias</p>
@@ -240,14 +239,14 @@
 
                 <div id="cbp-qtrotator" class="cbp-qtrotator">
                     <div class="cbp-qtcontent perfil">
-                        <img class="perfil" src="assets/images/eu1.jpeg" alt="elida" />
+                        <img class="perfil" src="assets/img/eu1.jpeg" alt="elida" />
                         <blockquote>
                             <p>A felicidade da vida está nas coisas simples, e por conta de sua simplicidade e sinceridade é que sou feliz.</p>
                             <footer>Gabriel Mateus</footer>
                         </blockquote>
                     </div>
                     <div class="cbp-qtcontent perfil">
-                        <img class="perfil" src="assets/images/eu2.jpeg" alt="cris" />
+                        <img class="perfil" src="assets/img/eu2.jpeg" alt="cris" />
                         <blockquote>
                             <p>Espero poder compartilhar muitos momentos ao seu lado. Te amo!</p>
                             <footer>Gabriel Mateus</footer>
@@ -302,45 +301,12 @@
 
     <!-- Javascript files -->
 
-    <script src="assets/libs/angular.min.js"></script>
-    <script src="assets/js/jquery-1.11.1.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.parallax-1.1.3.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.js"></script>
-    <script src="assets/js/jquery.sticky.js"></script>
-    <script src="assets/js/smoothscroll.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/jquery.easypiechart.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.cbpQTRotator.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="app/mainApp.js"></script>
-    <script src="app/mainController.js"></script>
-
-    <!-- LIBS -->
-    <script src="assets/libs/background.js"></script>
     <script src="assets/libs/countdown.min.js"></script>
-    <!--<script src="assets/libs/bootstrap.min.js"></script>-->
-    <script src="assets/libs/ui-bootstrap-tpls-0.12.0.min.js"></script>
-    <script>
-    // Esse script faz a mágica acontecer
-    $(document).ready(function(){
-        // Quando clicar em qualquer imagem dentro da galeria (.grid figure)
-        $('.grid figure').click(function(){
-            var imgSource = $(this).find('img').attr('src'); // Pega o link da imagem
-            var imgTitle = $(this).find('h2').text(); // Pega o título (Modelo, Maravilhosa...)
-            
-            $('#image-modal').css('display', 'block'); // Mostra a janela
-            $('#img-expanded').attr('src', imgSource); // Coloca a imagem na janela
-            $('#caption-text').text(imgTitle); // Coloca o texto
-        });
-
-        // Quando clicar no X ou fora da imagem, fecha a janela
-        $('.close-btn, #image-modal').click(function(){
-            $('#image-modal').css('display', 'none');
-        });
-    });
-</script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.cbpQTRotator.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 

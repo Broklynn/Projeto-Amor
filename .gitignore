@@ -1,0 +1,73 @@
+# =========================
+# NODE / BACKEND (se usar)
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+
+# =========================
+# LOGS
+# =========================
+logs/
+*.log
+
+# =========================
+# SISTEMA OPERACIONAL
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# EDITORES
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# BUILD / DIST
+# =========================
+dist/
+build/
+
+# =========================
+# CACHE
+# =========================
+.cache/
+.tmp/
+
+# =========================
+# ARQUIVOS DESNECESSÁRIOS
+# =========================
+*.tmp
+*.bak
+*.old
+
+# =========================
+# ARQUIVOS PESSOAIS
+# =========================
+*.zip
+*.rar
+*.7z
+
+# =========================
+# IMAGENS GRANDES (opcional)
+# =========================
+# Descomente se quiser ignorar uploads grandes
+# *.psd
+# *.ai
+
+# =========================
+# PHP (se não usar backend)
+# =========================
+# Ignorar arquivos PHP de teste
+# *.php
+
+# =========================
+# OUTROS
+# =========================
+coverage/

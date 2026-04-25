@@ -27,10 +27,3 @@ Pra sua Namorada
 
 O site mostra um contador de alguma data especial, com algumas fotos marcantes além daquela sua mensagem amorosa.
 
-# Para mais informações acesse.
-crislanio.wordpress.com
-
-### Screenshots
-![alt tag](https://raw.githubusercontent.com/crislanio/PraSuaNamorada/master/assets/images/1i.png)
-![alt tag](https://raw.githubusercontent.com/crislanio/PraSuaNamorada/master/assets/images/2i.png)
-
