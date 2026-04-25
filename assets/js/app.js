@@ -151,14 +151,25 @@ function initScrollspy() {
     });
 }
 
-// Quote rotator (assumindo que o plugin funciona sem jQuery)
+// Quote rotator em JS puro
 function initQuoteRotator() {
-    if (typeof $ !== 'undefined' && $('#cbp-qtrotator').cbpQTRotator) {
-        $('#cbp-qtrotator').cbpQTRotator();
-    } else {
-        // Fallback simples se plugin não disponível
-        console.log('Quote rotator plugin not available');
+    const rotator = document.getElementById('cbp-qtrotator');
+    if (!rotator) return;
+
+    const contents = rotator.querySelectorAll('.cbp-qtcontent');
+    if (contents.length < 2) return;
+
+    let currentIndex = 0;
+
+    function showNext() {
+        contents.forEach((content, index) => {
+            content.style.display = index === currentIndex ? 'block' : 'none';
+        });
+        currentIndex = (currentIndex + 1) % contents.length;
     }
+
+    showNext(); // Mostrar primeiro
+    setInterval(showNext, 8000); // Intervalo de 8s como no original
 }
 
 // Modal da galeria
